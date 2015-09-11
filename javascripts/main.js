@@ -1,6 +1,7 @@
-define(['jquery','populate-songs', 'get-more-songs', 'domacc', 'bootstrap'], function ($, populate, getMoreSongs, dom) {
+define(['jquery','populate-songs', 'get-more-songs', 'domacc', 'bootstrap'],
+function ($, populate, getMoreSongs, dom, boot) {
 
-    //$('.dropdown-toggle').dropdown();
+    $('.song-list').dropdown();
 
     populate.getSongs(dom.makeSongList);
 
