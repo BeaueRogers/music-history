@@ -1,0 +1,25 @@
+define([], function () {
+  "songs": [
+    {
+      "title": "Horizon",
+      "artist": "Ambinate",
+      "album": "Horizon EP",
+      "genre": "hypnotic-downtempo",
+      "song-length": ""
+    },
+    {
+      "title": "Coastal Brake",
+      "artist": "Tycho",
+      "album": "Dive",
+      "genre": "hypnotic-downtempo",
+      "song-length": ""
+    },
+    {
+      "title": "Never Mess With Sunday",
+      "artist": "Yppah",
+      "album": "Ninja Tune XX",
+      "genre": "breakbeat-downtempo",
+      "song-length": ""
+    }
+  ]
+};

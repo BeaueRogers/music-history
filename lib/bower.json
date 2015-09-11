@@ -1,0 +1,19 @@
+{
+  "name": "music-history",
+  "version": "1.00",
+  "homepage": "https://github.com/BeaueRogers/music-history",
+  "authors": [
+    "Beau Rogers <Beauerogers@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "require-handlebars-plugin": "~1.0.0"
+  }
+}

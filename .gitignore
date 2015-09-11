@@ -1,3 +1,6 @@
 .DS_Store
 cow/
 :q
+bower_components
+sass
+node_modules

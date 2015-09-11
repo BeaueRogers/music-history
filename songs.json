@@ -1,0 +1,25 @@
+define([], function () {
+  "songs": [
+    {
+      "title": "Minor Cause",
+      "artist": "Emancipator",
+      "album": "Dusk to Dawn",
+      "genre": "classical-downtempo",
+      "song-length": ""
+    },
+    {
+      "title": "Cirrus",
+      "artist": "Bonobo",
+      "album": "North Borders",
+      "genre": "world-downtempo",
+      "song-length": ""
+    },
+    {
+      "title": "Lovely Bloodflow",
+      "artist": "Baths",
+      "album": "Cerulean",
+      "genre": "breakbeat-downtempo",
+      "song-length": ""
+    }
+  ]
+};
