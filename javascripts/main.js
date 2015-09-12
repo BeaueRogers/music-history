@@ -1,12 +1,40 @@
-define(['jquery','populate-songs', 'get-more-songs', 'domacc', 'bootstrap'],
-function ($, populate, getMoreSongs, dom, boot) {
+require.config({
+  baseUrl: "./javascripts",
+  paths: {
+      "jquery": "../lib/bower_components/jquery/dist/jquery.min",
+      "bootstrap": "../lib/bower_components/bootstrap/dist/js/bootstrap.min",
+      "hbs": "../lib/bower_components/require-handlebars-plugin/hbs"
+    },
+    shim : {
+        "bootstrap":["jquery"]
+    }
+});
 
-    $('.song-list').dropdown();
+require(
+  [
+    "jquery",
+    "hbs",
+    "bootstrap",
+    "populate-songs",
+    "get-more-songs"
+  ],
+  function($, Handlebars, bootstrap, populateSongs, getMoreSongs) {
 
-    populate.getSongs(dom.makeSongList);
-
-    $(".add-more").one('click', function () {
-      getMoreSongs.getMore(dom.makeSongList);
+    populateSongs.getSongs(function(songs) {
+      console.log("Binding the template to the following data", songs);
+      require(["hbs!../templates/songs"], function(songTemplate) {
+        $(".song-list").html(songTemplate(songs));
+      });
     });
 
-});
+
+    getMoreSongs.getMore(function(songs) {
+         require(["hbs!../templates/songs"], function(songTemplate) {
+         $(".add-more").html(songTemplate(songs));
+       });
+    });
+
+  }
+);
+
+      //$(".add-more").one("click", function () {

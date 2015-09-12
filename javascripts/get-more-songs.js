@@ -2,7 +2,7 @@ define(function () {
     return {
         getMore: function (callback) {
             $.ajax({
-              url: 'moreSongs.json',
+              url: 'more-songs.json',
               dataType: "json",
             }).done(function(songs) {
               callback(songs.songs);
