@@ -21,16 +21,18 @@ require(
   function($, Handlebars, bootstrap, populateSongs, getMoreSongs) {
 
     populateSongs.getSongs(function(songs) {
-      console.log("Binding the template to the following data", songs);
+      console.log("Binding initial", songs);
       require(["hbs!../templates/songs"], function(songTemplate) {
         $(".song-list").html(songTemplate(songs));
       });
     });
 
     $(".btn").on("click", function() {
+      console.log("initial click confirmed");
       getMoreSongs.getMore(function(songs) {
-        console.log("Binding the template to the following data", songs);
+        console.log("Binding secondary", songs);
         require(["hbs!../templates/songs"], function(songTemplate) {
+          console.log("hbs template loaded");
         $(".add-more").html(songTemplate(songs));
         });
       });
@@ -38,3 +40,7 @@ require(
   });
 
       //$(".add-more").one("click", function () {
+
+        //getMoreSongs.getMore(function(songs) {
+          //populateSongs.getSongs(function(songs) {
+
