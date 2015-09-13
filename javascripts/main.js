@@ -27,14 +27,14 @@ require(
       });
     });
 
-
-    getMoreSongs.getMore(function(songs) {
-         require(["hbs!../templates/songs"], function(songTemplate) {
-         $(".add-more").html(songTemplate(songs));
-       });
+    $(".btn").on("click", function() {
+      getMoreSongs.getMore(function(songs) {
+        console.log("Binding the template to the following data", songs);
+        require(["hbs!../templates/songs"], function(songTemplate) {
+        $(".add-more").html(songTemplate(songs));
+        });
+      });
     });
-
-  }
-);
+  });
 
       //$(".add-more").one("click", function () {
