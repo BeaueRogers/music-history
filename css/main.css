@@ -58,6 +58,18 @@ input {
   margin: 10px;
   color: #deff00;
   background: #30BAB0;
-  border: 1px solid red; }
+  border: 1px solid rgba(200, 3, 5, 0.6); }
+
+a {
+  color: #deff00;
+  text-decoration: none; }
+
+a:link {
+  color: #deff00;
+  text-decoration: none; }
+
+a:hover {
+  color: #F06E03;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */

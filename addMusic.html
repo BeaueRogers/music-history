@@ -18,8 +18,6 @@
 
     <section class="flexy sidebar">
       <ul class="flex-item sidebar-class">
-        <li>Song Length:</li>
-        <input type="range" class="loan-range" name="loan-range" min="1:00" max="6:00" step=":05"/>
         <li >Artists:</li>
           <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -50,14 +48,24 @@
 
     <section class="flexy main">
       <form class="formulate">
-        <input type="text" class="addTitle">Add song title
-        <input type="text" class="addAlbum">Add song's album
-        <input type="text" class="addArtist">Add song's artist
+      <p>Enter the song title:<p>
+        <input type="text" required id="songName">
+      <p> Enter the song's album:<p>
+        <input type="text" required id="artistName">
+      <p> Enter the song's artist:<p>
+        <input type="text" required id="albumName">
+        <p> Enter the song's genre:<p>
+        <input type="text" required id="genreName">
+        <p><p>
+        <button type="button" class="btn" id="addSong">Add song to FIYAHBASE!  <span class="glyphicon glyphicon-send"></span></button>
       </form>
+      <div id="additionSuccess">
+      success here
+      </div>
 
   </div>
 
-    <script data-main="javascripts/main" src="./lib/bower_components/requirejs/require.js" type="text/javascript"></script>
+    <script data-main="javascripts/addMusic" src="./lib/bower_components/requirejs/require.js" type="text/javascript"></script>
 
   </body>
 </html>
