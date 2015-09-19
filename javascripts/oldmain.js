@@ -1,4 +1,4 @@
-require(['jquery', 'bootstrap', 'populate-songs', 'get-more-songs'],
+/*require(['jquery', 'bootstrap', 'populate-songs', 'get-more-songs'],
 function ($, bootstrap, populate, getMoreSongs) {
   var moreSongsLoaded = false;
   console.log("asking initial songs module for songs array");
@@ -16,4 +16,4 @@ function ($, bootstrap, populate, getMoreSongs) {
       getMoreSongs.getMore(dom.makeSongList);
     });
 
-});
+}); */

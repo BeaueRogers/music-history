@@ -5,8 +5,8 @@
       "artist": "Emancipator",
       "album": "Dusk to Dawn",
       "genre": "classical-downtempo",
-      "albumIMG": "test",
-      "artistIMG": "test",
+      "albumIMG": "https://f1.bcbits.com/img/a0662347024_10.jpg",
+      "artistIMG": "http://static.vibe.com/files/article_images/emancipator2012photo.jpg",
       "song-length": ""
     },
     {
@@ -20,6 +20,27 @@
       "title": "Lovely Bloodflow",
       "artist": "Baths",
       "album": "Cerulean",
+      "genre": "breakbeat-downtempo",
+      "song-length": ""
+    },
+    {
+      "title": "Horizon",
+      "artist": "Ambinate",
+      "album": "Horizon EP",
+      "genre": "hypnotic-downtempo",
+      "song-length": ""
+    },
+    {
+      "title": "Coastal Brake",
+      "artist": "Tycho",
+      "album": "Dive",
+      "genre": "hypnotic-downtempo",
+      "song-length": ""
+    },
+    {
+      "title": "Never Mess With Sunday",
+      "artist": "Yppah",
+      "album": "Ninja Tune XX",
       "genre": "breakbeat-downtempo",
       "song-length": ""
     }

@@ -3,7 +3,7 @@ define(function () {
         getMore: function (callback) {
           console.log("get-more-songs.js running");
             $.ajax({
-              url: './more-songs.json'
+              url: 'https://music-history-beau.firebaseio.com/'
             }).fail(
             //console.log(".done is working");
             function(songs) {

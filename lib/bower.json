@@ -14,6 +14,8 @@
     "tests"
   ],
   "dependencies": {
-    "require-handlebars-plugin": "~1.0.0"
+    "require-handlebars-plugin": "~1.0.0",
+    "firebase": "~2.2.9",
+    "bootstrap-material-design": "~0.3.0"
   }
 }

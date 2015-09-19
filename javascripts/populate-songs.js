@@ -2,10 +2,10 @@ define(function () {
     return {
         getSongs: function (callback) {
             $.ajax({
-              url: './songs.json'
+              url: 'https://music-history-beau.firebaseio.com/.json'
             }).done(
             function(songs) {
-              console.log("We got the songs", songs);
+              //console.log("We got the songs", songs);
               callback(songs);
             });
         }
